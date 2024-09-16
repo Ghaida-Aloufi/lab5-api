@@ -6,28 +6,29 @@ fetch(url)
     console.log(data);
 
     let div = document.createElement("div");
-        div.classList="div"
+    div.classList = "div"
 
     div.innerHTML = '';
 
     data.forEach((e) => {
-      let r=document.createElement("div")
-      let c=r.classList="div2"
-      
+      let r = document.createElement("div")
+      let c = r.classList = "div2"
+
       let img = document.createElement("img");
-      img.classList="img"
+      img.classList = "img"
       img.src = e.image;
-  
+
 
       let pTitle = document.createElement("p");
-      pTitle.textContent = e.title;
+      pTitle.textContent = e.title ;
+
 
       let pPrice = document.createElement("p");
       pPrice.textContent = e.price;
 
       r.appendChild(img);
       r.appendChild(pTitle);
-      r.appendChild(pPrice); 
+      r.appendChild(pPrice);
       div.appendChild(r);
 
       document.body.appendChild(div);
